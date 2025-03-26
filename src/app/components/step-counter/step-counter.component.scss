@@ -1,0 +1,92 @@
+.step-counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #e0bfe6; /* Fondo morado suave */
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #4d3067; /* Morado oscuro */
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.step-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a47ebf, #7a5c91); /* Degradado morado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.step-circle:hover {
+  transform: scale(1.05);
+}
+
+.step-count {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.step-label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.step-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.acceleration-info {
+  font-size: 1.1rem;
+  color: #6a4988; /* Morado intermedio */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.acceleration-info strong {
+  color: #7a5c91;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Botón de Reiniciar */
+.reset-button {
+  background: linear-gradient(135deg, #7a5c91, #9e77b8);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reset-button:hover {
+  background: linear-gradient(135deg, #9e77b8, #7a5c91);
+  transform: scale(1.05);
+}
